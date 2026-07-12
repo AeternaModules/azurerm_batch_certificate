@@ -1,3 +1,7 @@
+output "batch_certificates_id" {
+  description = "Map of id values across all batch_certificates, keyed the same as var.batch_certificates"
+  value       = { for k, v in azurerm_batch_certificate.batch_certificates : k => v.id }
+}
 output "batch_certificates_account_name" {
   description = "Map of account_name values across all batch_certificates, keyed the same as var.batch_certificates"
   value       = { for k, v in azurerm_batch_certificate.batch_certificates : k => v.account_name }
