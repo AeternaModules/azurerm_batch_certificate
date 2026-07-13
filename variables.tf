@@ -4,8 +4,8 @@ Map of batch_certificates, attributes below
 Required:
     - account_name
     - certificate
-    - certificate_key_vault_id (alternative to certificate - read from Key Vault instead)
-    - certificate_key_vault_secret_name (alternative to certificate - read from Key Vault instead)
+    - certificate_key_vault_id (optional, alternative to certificate)
+    - certificate_key_vault_secret_name (optional, alternative to certificate)
     - format
     - resource_group_name
     - thumbprint
